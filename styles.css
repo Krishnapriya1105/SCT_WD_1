@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Style the navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #2a0dba;
+    padding: 10px 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+    text-align: center;
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    display: inline-flex;
+}
+
+/* Style the navigation links */
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    
+}
+
+/* Change link color on hover */
+.nav-list li a:hover {
+    color: #333;
+    background-color: #fff;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Style when scrolled */
+.scrolled {
+    background-color: #5be5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+/* Sample content section */
+.content {
+    padding: 100px 20px;
+    margin-top: 60px; /* Space for the fixed navbar */
+}
+
+.content section {
+    height: 800px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.banner{
+    position: fixed;
+    text-align: center;
+    background-size: cover;
+    height: 500px;
+    width: 500px;
+    
+}
